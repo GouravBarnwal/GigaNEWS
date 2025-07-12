@@ -8,7 +8,7 @@ const News = (props) => {
   const [articles, setArticles] = useState([]);
   const [loading, setLoading] = useState(true);
   const [page, setPage] = useState(1);
-  const [totalResults, setTotalResults] = useState(0);
+  // Removed unused totalResults variable
   const [hasMore, setHasMore] = useState(true);
 
   const capitalizeFirstLetter = (string) => {
@@ -26,7 +26,7 @@ const News = (props) => {
     const totalResults = parsedData.totalResults || 0;
     props.setProgress(70);
     setArticles(articles);
-    setTotalResults(totalResults);
+    // setTotalResults(totalResults); // No longer needed
     setLoading(false);
     setHasMore(articles.length > 0 && articles.length < totalResults);
     props.setProgress(100);
@@ -46,7 +46,7 @@ const News = (props) => {
     const newArticles = parsedData.articles || [];
     const totalResults = parsedData.totalResults || 0;
     setArticles(articles.concat(newArticles));
-    setTotalResults(totalResults);
+    // setTotalResults(totalResults); // No longer needed
     setPage(nextPage);
     setHasMore(newArticles.length > 0 && articles.length + newArticles.length < totalResults);
   };
