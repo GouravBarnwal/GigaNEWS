@@ -1,0 +1,58 @@
+{
+  "status": "ok",
+  "totalResults": 49,
+  "articles": [
+      {
+          "source": {
+              "id": "the-washington-post",
+              "name": "The Washington Post"
+          },
+          "author": "Deni Ellis Bechard",
+          "title": "Franklin Stahl, biologist who helped reveal how DNA replicates, dies at 95 - The Washington Post",
+          "description": "An early experiment, with colleague Matthew Meselson, helped set the stage for a revolution in genetics.",
+          "url": "https://www.washingtonpost.com/obituaries/2025/07/07/stahl-genetics-meselson-dead/",
+          "urlToImage": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/LOSYH4PU4BL3TOZ7YZ5OT6VOEU.jpg&w=1440",
+          "publishedAt": "2025-07-08T02:16:32Z",
+          "content": "Franklin W. Stahl, an American molecular biologist whose landmark 1957-58 experiment with colleague Matthew Meselson revealed how DNA replicates, helping pave the way for a revolution in genetics res… [+8537 chars]"
+      },
+      {
+          "source": {
+              "id": null,
+              "name": "ScienceAlert"
+          },
+          "author": "Universe Today",
+          "title": "Impact That Gave Us a Moon Could Explain Why Earth Now Has Life - ScienceAlert",
+          "description": "How did Earth, alone among the Solar System's rocky planets, become the home for life? How, among all this frigid lifelessness, did our planet become warm, hospitable, and life-sustaining? The answer to these questions is complex and multi-faceted, and part o…",
+          "url": "https://www.sciencealert.com/impact-that-gave-us-a-moon-could-explain-why-earth-now-has-life",
+          "urlToImage": "https://www.sciencealert.com/images/2025/07/LeadLunarOriginsCredit_NASAJPLCaltechT.Pyle__20250704_171605.jpg",
+          "publishedAt": "2025-07-08T02:07:34Z",
+          "content": "How did Earth, alone among the Solar System's rocky planets, become the home for life? How, among all this frigid lifelessness, did our planet become warm, hospitable, and life-sustaining?\r\nThe answe… [+8810 chars]"
+      },
+      {
+          "source": {
+              "id": null,
+              "name": "ScienceAlert"
+          },
+          "author": "AFP",
+          "title": "Alpha Male Primates a Myth, Researchers Find in New Study - ScienceAlert",
+          "description": "New research on Monday contradicted the commonly held idea that males dominate females among primates, revealing far more nuanced power dynamics in the relationships of our close relatives.",
+          "url": "https://www.sciencealert.com/alpha-male-primates-a-myth-researchers-find-in-new-study",
+          "urlToImage": "https://www.sciencealert.com/images/2025/07/alpha_male_myth_header.jpg",
+          "publishedAt": "2025-07-08T01:08:10Z",
+          "content": "New research on Monday contradicted the commonly held idea that males dominate females among primates, revealing far more nuanced power dynamics in the relationships of our close relatives.\r\n\"For a l… [+3570 chars]"
+      },
+      {
+          "source": {
+              "id": null,
+              "name": "Phys.Org"
+          },
+          "author": "Royal Astronomical Society",
+          "title": "Is Earth inside a huge void? 'Sound of the Big Bang' hints at possible solution to Hubble tension - Phys.org",
+          "description": "Earth and our entire Milky Way galaxy may sit inside a mysterious giant hole which makes the cosmos expand faster here than in neighboring regions of the universe, astronomers say.",
+          "url": "https://phys.org/news/2025-07-earth-huge-void-big-hints.html",
+          "urlToImage": "https://scx2.b-cdn.net/gfx/news/hires/2025/is-earth-inside-a-huge.jpg",
+          "publishedAt": "2025-07-07T23:00:01Z",
+          "content": "Earth and our entire Milky Way galaxy may sit inside a mysterious giant hole which makes the cosmos expand faster here than in neighboring regions of the universe, astronomers say.\r\nTheir theory is a… [+4778 chars]"
+      }
+  ]
+}

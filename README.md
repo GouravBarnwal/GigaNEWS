@@ -68,3 +68,43 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## Deploying to Netlify with NewsAPI Proxy
+
+NewsAPI does not allow direct client-side requests on the free plan. To deploy this project and hide your API key, use Netlify Functions as a backend proxy:
+
+1. **Create the function directory:**
+   - At your project root, create a folder: `netlify/functions`
+
+2. **Add a proxy function:**
+   - Create a file: `netlify/functions/news.js`
+   - Paste the following code:
+
+```js
+const fetch = require('node-fetch');
+
+exports.handler = async function(event, context) {
+  const { category, country, page, pageSize } = event.queryStringParameters;
+  const apiKey = 'YOUR_NEWSAPI_KEY'; // <-- put your NewsAPI key here
+  const url = `https://newsapi.org/v2/top-headlines?country=${country}&category=${category}&page=${page}&apiKey=${apiKey}&pageSize=${pageSize}`;
+  const response = await fetch(url);
+  const data = await response.json();
+  return {
+    statusCode: 200,
+    body: JSON.stringify(data),
+    headers: {
+      'Access-Control-Allow-Origin': '*',
+    }
+  };
+};
+```
+
+3. **Update your React app to fetch from the function:**
+   - Instead of calling NewsAPI directly, call:
+     `/.netlify/functions/news?country=us&category=business&page=1&pageSize=8`
+   - Remove the `apiKey` from the frontend code.
+
+4. **Deploy to Netlify:**
+   - Netlify will automatically deploy your function and frontend together.
+
+This setup keeps your NewsAPI key secret and allows your deployed app to fetch news articles successfully.
