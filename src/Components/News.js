@@ -37,15 +37,6 @@ const News = (props) => {
     updateNews();
     // eslint-disable-next-line
   }, [props.category]);
-  const handlePreviousClick = async () => {
-    setPage(page - 1)
-    updateNews();
-  }
-
-  const handleNextClick = async () => {
-    setPage(page + 1)
-    updateNews();
-  }
 
   const fetchMoreData = async () => {
     const nextPage = page + 1;
